@@ -1,0 +1,42 @@
+#%RAML 1.0 ResourceType
+
+get?:
+  description: |
+    Récupération de <<resourcePathName>>
+  responses:
+    200:
+      body:
+        application/json:
+          example: <<exampleResponse>>
+
+post?:
+  description: |
+    Création de <<resourcePathName>>
+  body:
+    application/json:
+      example: <<exampleBodyPost>>
+  responses:
+    201:
+      body:
+        application/json:
+          example:
+            {
+              "message": "<<resourcePathName>> created"
+            }
+
+put?: 
+  description: |
+    Modification de <<resourcePathName>>
+  body:
+    application/json:
+      example: <<exempleBodyPut>>
+  responses:
+    201:
+      body:
+        application/json:
+          example:
+            {
+              "message": "<<resourcePathName>> modified"
+            }
+
+      

@@ -1,0 +1,10 @@
+#%RAML 1.0
+title: jenkins-getaccount
+
+uses: 
+  rt: library/methods.raml
+
+/getaccounts:
+  type: {rt.methods: {exampleResponse : example/exampleDataAccount.raml}}
+  get:
+
