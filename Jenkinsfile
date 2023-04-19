@@ -1,9 +1,10 @@
 pipeline {
     agent any
     stages {
-        stage('Example') {
+        stage('Deploy') {
             steps {
-                echo 'Hello World VSCODE'
+                // sh 'apt-get install -y maven'
+                sh 'mvn clean deploy -DmuleDeploy'
             }
         }
     }
