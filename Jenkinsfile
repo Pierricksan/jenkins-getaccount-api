@@ -4,7 +4,10 @@ pipeline {
         maven 'Maven 3.8.8'
         jdk 'openjdk-11'
     }
-      stages {
+    triggers {
+        pollSCM('H/1 * * * *')
+    }
+    stages {
     stage('Checkout') {
       steps {
         checkout scm
