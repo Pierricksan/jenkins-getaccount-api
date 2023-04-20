@@ -13,7 +13,7 @@ pipeline {
         echo "Configuration en cours ... "
         script {
           config = readJSON file: "env/${env.BRANCH_NAME}/config.json"
-          env = config.get("envConfig")
+          env = config.get("cloudhub")
         }
       }
     }
@@ -27,7 +27,7 @@ pipeline {
         ANYPOINT_CREDENTIALS = credentials ('PierrickunMulesoftPlatform')
       }
       steps {
-        sh "mvn deploy -DmuleDeploy -Dusername=${ANYPOINT_CREDENTIALS_USR} -Dpassword=${ANYPOINT_CREDENTIALS_PSW} -Denvironment=${cloudhub.environment} -DappName=${cloudHub.appName}"
+        sh "mvn deploy -DmuleDeploy -Dusername=${ANYPOINT_CREDENTIALS_USR} -Dpassword=${ANYPOINT_CREDENTIALS_PSW} -Denvironment=${env.environment} -DappName=${env.appName}"
       }
     }
 
