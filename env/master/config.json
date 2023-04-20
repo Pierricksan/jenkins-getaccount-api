@@ -1,0 +1,7 @@
+{
+    "cloudhub": {
+      "environment": "Sandbox",
+      "appName": "jenkins-getaccount-api"
+    }
+  }
+  
