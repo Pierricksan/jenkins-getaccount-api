@@ -1,7 +1,5 @@
 {
     "cloudhub": {
-      "username": "Pierrickun",
-      "password": "MULEsoft007",
       "environment": "SandboxTest",
       "appName": "jenkins-getaccount-api-testbranch"
     }

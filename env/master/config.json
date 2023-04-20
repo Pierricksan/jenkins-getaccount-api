@@ -1,9 +1,7 @@
 {
     "cloudhub": {
-      "username": "Pierrickun",
-      "password": "MULEsoft007",
       "environment": "Sandbox",
-      "appName": "votre_nom_d_application_cloudhub"
+      "appName": "jenkins-getaccount-api"
     }
   }
   
