@@ -27,7 +27,7 @@ pipeline {
         ANYPOINT_CREDENTIALS = credentials ('PierrickunMulesoftPlatform')
       }
       steps {
-        sh "mvn deploy -DmuleDeploy -Dusername=${ANYPOINT_CREDENTIALS_USR} -Dpassword=${ANYPOINT_CREDENTIALS_PSW} -Denvironment=${cloudhub.environment} -DappName=${cloudHub.appName}
+        sh "mvn deploy -DmuleDeploy -Dusername=${ANYPOINT_CREDENTIALS_USR} -Dpassword=${ANYPOINT_CREDENTIALS_PSW} -Denvironment=${cloudhub.environment} -DappName=${cloudHub.appName}"
       }
     }
 
